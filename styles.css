@@ -49,9 +49,6 @@ main{
     gap: 20px;
 }
 
-/* @media only screen and (max-width: 1000px) {
-
-  } */
 
 .navbar-toggler{
     color: blue;
@@ -60,3 +57,39 @@ main{
 .navbar-toggler-icon{
     color: blue;
 }
+
+.portfolioPic {
+    box-shadow: 80px 80px 80px 80px white inset;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+ul {
+    background-color: rgba(13, 13, 116, 0.658);
+    border-radius: .25rem;
+}
+li {
+
+}
+h2 {
+    border-radius: .25rem;
+    background-color: rgb(0, 0, 255);
+}
+.grid{
+    display: grid;
+}
+.removeBullets {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+  }
