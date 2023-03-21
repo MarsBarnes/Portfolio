@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigail's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet">
+    <!-- LINK JS HERE AND DELAY DOWNLOAD -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Abigail</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined"> menu</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link" href="./about.html">About</a>
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <!-- <section class="about">
+            <h2>About</h2>
+            <p></p>
+        </section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here is a list of projects, I've worked on.</p>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>email: AbigailBarnes27@gmail.com</p>
+        </section> -->
+        <!-- CAROSEL  CAROSEL    CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL   CAROSEL  CAROSEL    CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL -->
+          <!-- I got the carosel code from https://getbootstrap.com/docs/4.0/components/carousel/ -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+              <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./photos/Dreamstate_AbigailBarnes.jpg" alt="mint and light pink acrylic swirled on canvas">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./photos/TheFlowOfDreams_AbigailBarnes.jpg" alt="cyan and magenta paint smear that imitates the essence of a dream">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./photos/TheNorthernLightningDance_AbigailBarnes.jpg" alt="a figure looks as if they are dancing in a lightening storm of red and cyan paint">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+<!-- CAROSEL  CAROSEL    CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL   CAROSEL  CAROSEL    CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL CAROSEL -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
