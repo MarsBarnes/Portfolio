@@ -1,5 +1,5 @@
 h2 {
-    color: rgb(146, 216, 42);
+    color: rgb(255, 255, 255);
 }
 
 .portfolio{
@@ -78,18 +78,81 @@ h2 {
 }
 .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
 .removeBullets {
     list-style-type: none;
     list-style: none;
     padding: 0;
 }
-html {
-    font-size: 16px;
+.portfolioGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.certs{
+    max-width: 400px;
+}
+.allcol{
+    grid-column: span 3;
+    margin: auto;
 }
 
-@media only screen and (min-width: 1000px) {
+/* EXTRA SMALL SCREENS */
+@media only screen and (max-width: 699px){
+    html {
+        font-size: 16px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .certs{
+        max-width: 300px;
+    }
+  }
+
+
+/* SMALL SCREENS */
+@media only screen and (min-width: 700px) and (max-width: 999PX) {
+    html {
+        font-size: 16px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .certs{
+        max-width: 300px;
+    }
+  }
+
+
+/* MEDIUM SCREENS */
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
     html {
         font-size: 20px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .certs{
+        max-width: 400px;
+    }
+  }
+
+
+/* LARGE SCREENS */
+@media only screen and (min-width: 1400){
+    html {
+        font-size: 20px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .certs{
+        max-width: 400px;
     }
   }
