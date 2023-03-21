@@ -1,14 +1,5 @@
-.about {
-    background-color:  blue;
-}
-.portfolio {
-    background-color: blueviolet;
-}
-.contact {
-    background-color: aqua;
-}
 h2 {
-    color: yellow;
+    color: rgb(146, 216, 42);
 }
 
 .portfolio{
