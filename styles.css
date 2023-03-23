@@ -5,15 +5,27 @@ h2 {
 
 .portfolio{
     max-width: 300px;
+    margin: 0;
+
 }
 .portfolioItem{
     background-color: rgba(13, 13, 116, 0.658);
     border-radius: 8px;
-    padding-top: 8px;
+    padding: 8px;
     height: 450px;
     width: 450px;
     align-items: center;
     justify-items: center;
+    display: grid;
+    margin: auto;
+    grid-template-rows: 2fr 1fr;
+    max-width: 400px;
+
+}
+.comingSoon{
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .carousel-item {
@@ -39,6 +51,10 @@ h2 {
 
 .bold p {
     font-weight: 400;
+}
+
+p {
+    margin-bottom: 0;
 }
 
 main,
@@ -70,6 +86,8 @@ main{
 .portfolioMain {
     align-items: center;
     gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -173,6 +191,14 @@ footer {
     .certs{
         max-width: 300px;
     }
+    .portfolio{
+        max-width: 268px;
+    }
+    .portfolioItem{
+        padding: 0;
+        max-width: 300px;
+    }
+
     .allcol{
         grid-column: span 1;
         margin: auto;
@@ -197,11 +223,21 @@ footer {
 /* EXTRA SMALL SCREENS */
 @media only screen and (min-width: 501px) and (max-width: 699px){
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
     .grid{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .portfolioMain {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .portfolioItem {
+        max-width: 400px;
+    }
+    .portfolio{
+        max-width: 300px;
     }
     .certs{
         max-width: 300px;
@@ -222,11 +258,21 @@ footer {
 /* SMALL SCREENS */
 @media only screen and (min-width: 700px) and (max-width: 999PX) {
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .portfolioMain {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .portfolioItem {
+        max-width: 400px;
+    }
+    .portfolio{
+        max-width: 300px;
     }
     .certs{
         max-width: 300px;
