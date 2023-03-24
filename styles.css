@@ -13,7 +13,7 @@ h2 {
 }
 .portfolioItem{
     /* background-color: rgba(13, 13, 116, 0.658); */
-    background-color: #008891;
+    background-color: #0f3057;
     color: #E7E7DE;
     border-radius: 8px;
     padding: 8px;
@@ -59,7 +59,7 @@ h2 {
     color:#E7E7DE;
 }
 .bold h4 {
-    background-color: #0f3057;
+    background-color: #008891;
     border-radius: 8px;
 }
 
@@ -80,13 +80,13 @@ main,
 footer,
 body{
     /* background-color: #333333; */
-    background-color: #434242;
+    /* background-color: #434242; */
     background-image: url(./photos/light_honeycomb.png);
     color: #0f3057;
 }
 header {
-    background-color: #00000056;
-    opacity: 0.5;
+    /* background-color: #00000000;
+    opacity: 0.5; */
 
 }
 
@@ -127,15 +127,24 @@ main{
     color: #008891;
 }
 .nav-link{
-    color: #ecc30b;
+    color: #E7E7DE;
+    background-color: #008891;
+    opacity: 1;
+    border-radius: 8px;
+    padding: 8px !important;
+    margin: 8px;
 }
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
 .container-fluid{
     color: #0f3057;
-    font-style: italic;
+    /* background-color: #008891;
+    opacity: 1; */
 }
 a{
-    color: #0f3057;
-    font-style: italic;
+    color: #008891;
 }
 
 .portfolioPic {
@@ -247,7 +256,7 @@ footer {
     }
     .linkPic {
         /* background-color: #ECC30B; */
-        background-color: #ecc30b;
+        /* background-color: #ecc30b; */
     }
     .linkedIn{
         max-height: 26px;
