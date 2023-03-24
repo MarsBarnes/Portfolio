@@ -1,0 +1,108 @@
+@import url(./fonts.css);
+
+
+h1 {
+    Font-weight: 700;
+    Font-size: 26px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+h2 {
+    Font-weight: 400;
+    Font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+.h2real {
+    background-color: #7E64A6;
+    text-align: center;
+    color: #FFF;
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+}
+.font1 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.font2 {
+    font-family: 'Poppins', sans-serif;
+}
+.font3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li {
+    Font-weight: 400;
+    Font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.colors, .fonts, .textstyles {
+    border-color: #44345b;
+    border-width: .3cm;
+    border-style: solid;
+    margin: .5in;
+}
+/* nav.ul.li{
+    display: inline;
+} */
+#title {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.color1 {
+    background-color: #372549 ;
+    list-style: none;
+    color: #FFF;
+
+}
+.color2 {
+    background-color: #774C60 ;
+    list-style: none;
+    color: #FFF;
+
+}
+.color3 {
+    background-color: #B75D69 ;
+    list-style: none;
+    color: #FFF;
+
+}
+.color4 {
+    background-color: #EACDC2 ;
+    list-style: none;
+}
+
+.nobullets{
+    padding-left: 0;
+}
+
+
+/* 
+1A1423 Black darkest
+372549 Purple
+774C60 mauve
+B75D69 pink
+EACDC2 beige lightest 
+*/
+body {
+    background-color: #1A1423;
+}
+div{
+    background-color: #c9beda ;
+ 
+}
+li, .text {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+li {
+    list-style-type: "💜";
+}

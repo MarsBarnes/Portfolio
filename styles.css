@@ -1,3 +1,7 @@
+h1{
+    color:#008891
+}
+
 h2 {
     color: #E7E7DE;
     padding: 7px;
@@ -149,7 +153,7 @@ main{
     opacity: 1; */
 }
 a{
-    color: #008891;
+    color: #E7E7DE;
 }
 
 .portfolioPic {
