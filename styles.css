@@ -1,7 +1,10 @@
 h2 {
-    color: rgb(255, 255, 255);
+    color: #E7E7DE;
     padding: 7px;
+    border-radius: .25rem;
+    background-color: #008891;
 }
+
 
 .portfolio{
     max-width: 300px;
@@ -9,7 +12,9 @@ h2 {
 
 }
 .portfolioItem{
-    background-color: rgba(13, 13, 116, 0.658);
+    /* background-color: rgba(13, 13, 116, 0.658); */
+    background-color: #008891;
+    color: #E7E7DE;
     border-radius: 8px;
     padding: 8px;
     height: 450px;
@@ -38,7 +43,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 95%;
     padding-top: 2rem;
 }
 .carouselPic {
@@ -51,18 +56,38 @@ h2 {
 
 .bold p {
     font-weight: 400;
+    color:#E7E7DE;
+}
+.bold h4 {
+    background-color: #0f3057;
+    border-radius: 8px;
 }
 
 p {
     margin-bottom: 0;
 }
 
-main,
+/* main,
 header,
 footer,
 body{
-    background-color: #333333;
+    background-color: #333333; 
+    background-color: #434242;
+    background-image: url(./photos/bananasPattern.webp);
     color: white;
+} */
+main,
+footer,
+body{
+    /* background-color: #333333; */
+    background-color: #434242;
+    background-image: url(./photos/light_honeycomb.png);
+    color: #0f3057;
+}
+header {
+    background-color: #00000056;
+    opacity: 0.5;
+
 }
 
 html,
@@ -81,6 +106,7 @@ main{
     max-width: 95vw;
     text-align: center;
     margin-bottom: 65px;
+    margin-top: 30px;
 }
 
 .portfolioMain {
@@ -92,11 +118,24 @@ main{
 
 
 .navbar-toggler{
-    color: blue;
+    /* color: blue; */
+    color: #008891;
     align-items: baseline;
 }
 .navbar-toggler-icon{
-    color: blue;
+    /* color: blue; */
+    color: #008891;
+}
+.nav-link{
+    color: #ecc30b;
+}
+.container-fluid{
+    color: #0f3057;
+    font-style: italic;
+}
+a{
+    color: #0f3057;
+    font-style: italic;
 }
 
 .portfolioPic {
@@ -107,16 +146,13 @@ main{
 }
 
 ul {
-    background-color: rgba(13, 13, 116, 0.658);
+    background-color: #0f3057;
     border-radius: .25rem;
 }
 li {
 
 }
-h2 {
-    border-radius: .25rem;
-    background-color: rgb(0, 0, 255);
-}
+
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -126,6 +162,7 @@ h2 {
     list-style-type: none;
     list-style: none;
     padding: 0;
+    color:#E7E7DE
 }
 .portfolioGrid{
     display: grid;
@@ -164,11 +201,11 @@ iframe {
 
 }
 .formBox {
-    padding-bottom: 56.25%;
+    /* padding-bottom: 20%; */
     position: relative;
     display: block;
     width: 100%;
-    height: calc(100vh - 65px - 56px);
+    height: calc(100vh - 65px - 70px);
 
 }
 footer {
@@ -210,13 +247,16 @@ footer {
     }
     .linkPic {
         /* background-color: #ECC30B; */
-        background-color: #ecc30b00;
+        background-color: #ecc30b;
     }
     .linkedIn{
         max-height: 26px;
     }
     .gitHub{
         max-height: 30px;
+    }
+    .caroselPic {
+        width: 300px;
     }
   }
 
@@ -281,6 +321,13 @@ footer {
         grid-column: span 2;
         margin: auto;
     }
+    .carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 2rem;
+    }
   }
 
 
@@ -299,6 +346,18 @@ footer {
     .allcol{
         grid-column: span 2;
         margin: auto;
+    }
+    .carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        padding-top: 2rem;
+    }
+    #carouselExampleIndicators {
+        /* max-width: 65%; */
+        max-width: 850px;
+
     }
   }
 
@@ -324,5 +383,20 @@ footer {
         grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
         justify-items: center;
     }
+    .carousel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        padding-top: 2rem;
+    }
+    .carousel-item{
+        margin: auto;
+        
+    }
+    #carouselExampleIndicators {
+        /* max-width: 65%; */
+        max-width: 900px;
 
+    }
   }
