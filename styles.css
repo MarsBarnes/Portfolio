@@ -79,14 +79,19 @@ body{
 main,
 footer,
 body{
-    /* background-color: #333333; */
-    /* background-color: #434242; */
-    background-image: url(./photos/light_honeycomb.png);
     color: #0f3057;
+}
+body {
+    background-image: url(./photos/light_honeycomb.png);
+}
+footer {
+    background-color: #d5d5d5;
+    background-image: url(./photos/light_honeycomb.png);
 }
 header {
     /* background-color: #00000000;
     opacity: 0.5; */
+    /* background-color: #c4c4c4; */
 
 }
 
