@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Playlist from "./components/Playlist";
@@ -11,25 +10,31 @@ import SignInButton from "./util/getToken";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [tracks, setTracks] = useState([]);
+
+  const addToPlaylist = (track) => {
+    console.log("addToPlaylist", track);
+    // tracks.push(track);
+    setTracks((prevTracks) => [...prevTracks, track]);
+  };
 
   return (
     <div className="App">
-      <nav>
+      <nav className="navbar navbar-dark bg-dark">
+        <h3 className="p-2 flex-grow-1 bd-highlight leftaligntext">Jammming</h3>
+        <SignInButton />
+        <SaveToSpotifyButton />
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </nav>
       <main className="main">
         <div className="left">
-          <Tracklist searchQuery={searchQuery} />
+          <Tracklist searchQuery={searchQuery} addToPlaylist={addToPlaylist} />
         </div>
         <div className="right">
-          <Playlist />
+          <Playlist tracks={tracks} />
         </div>
       </main>
-      <footer>
-        <Track />
-        <SaveToSpotifyButton />
-        <SignInButton />
-      </footer>
+      <footer>{/* <Track /> */}</footer>
     </div>
   );
 }

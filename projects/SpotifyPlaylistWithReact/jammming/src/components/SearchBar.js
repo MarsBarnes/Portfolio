@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 //USED THIS WEBSITE TO HELP BUILD THE SearchBar COMPONENT  https://codingbeautydev.com/blog/react-get-input-value-on-enter/
 
-const SearchBar = ({searchQuery, setSearchQuery}) => {
+const SearchBar = ({ searchQuery, setSearchQuery }) => {
   const [messageBeingTyped, setMessageBeingTyped] = useState("");
 
   const [searchButtonClicked, setSearchButtonClicked] = useState(false);
@@ -25,7 +25,7 @@ const SearchBar = ({searchQuery, setSearchQuery}) => {
   };
 
   return (
-    <div>
+    <form className="form-inline">
       <input
         type="text"
         id="messageBeingTyped"
@@ -34,14 +34,21 @@ const SearchBar = ({searchQuery, setSearchQuery}) => {
         value={messageBeingTyped}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
+        className="mr-sm-2 p-2 bd-highlight"
       />
-      <button onClick={handleSearchButtonClick}>Search</button>
+      <button
+        type="button"
+        className="btn btn-outline-success my-2 my-sm-0"
+        onClick={handleSearchButtonClick}
+      >
+        Search
+      </button>
       {/* {console.log(
         "Henlo. It's me. You found the search bar. My searchQuery is " +
           searchQuery
       )} */}
       {/* <h2>You Searched For: {searchQuery}</h2> */}
-    </div>
+    </form>
   );
 };
 

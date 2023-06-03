@@ -1,7 +1,7 @@
 import React from "react";
 import { useSearchResults } from "../hooks/useSearchResults";
 
-const Tracklist = ({ searchQuery }) => {
+const Tracklist = ({ searchQuery, addToPlaylist }) => {
   const { error, fetching, json } = useSearchResults(searchQuery);
   console.log(json, fetching, error);
 
@@ -33,23 +33,32 @@ const Tracklist = ({ searchQuery }) => {
       <td>{item.artistName}</td>
       <td>{item.albumName}</td>
       <td>{item.id}</td>
-      <button>Add</button>
+      <td>
+        <button
+          className="btn btn-outline-success my-2 my-sm-0"
+          onClick={() => addToPlaylist(item)}
+        >
+          Add
+        </button>
+      </td>
     </tr>
   ));
 
   return (
     <div>
-      <h1>Tracklist (searching for {searchQuery})</h1>
-      <table>
+      <h1>Tracklist</h1>
+      {/* <h1>Tracklist (searching for {searchQuery})</h1> */}
+      <table className="table table-striped table-dark">
         <thead>
           <tr>
             <th>Song</th>
             <th>Artist</th>
             <th>Album</th>
             <th>id</th>
+            <th></th>
           </tr>
         </thead>
-        <tbody>{resultList};</tbody>
+        <tbody>{resultList}</tbody>
       </table>
     </div>
   );
