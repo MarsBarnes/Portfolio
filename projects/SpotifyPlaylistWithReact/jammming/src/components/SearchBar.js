@@ -25,7 +25,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
   };
 
   return (
-    <form className="form-inline">
+    <div className="form-inline">
       <input
         type="text"
         id="messageBeingTyped"
@@ -43,12 +43,7 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
       >
         Search
       </button>
-      {/* {console.log(
-        "Henlo. It's me. You found the search bar. My searchQuery is " +
-          searchQuery
-      )} */}
-      {/* <h2>You Searched For: {searchQuery}</h2> */}
-    </form>
+    </div>
   );
 };
 

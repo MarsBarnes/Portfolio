@@ -4,7 +4,7 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Playlist from "./components/Playlist";
 import Tracklist from "./components/Tracklist";
-import Track from "./components/Track";
+// import Track from "./components/Track";
 import SaveToSpotifyButton from "./components/SaveToSpotifyButton";
 import SignInButton from "./util/getToken";
 
@@ -14,8 +14,16 @@ function App() {
 
   const addToPlaylist = (track) => {
     console.log("addToPlaylist", track);
-    // tracks.push(track);
     setTracks((prevTracks) => [...prevTracks, track]);
+  };
+
+  const removeFromPlaylist = (track) => {
+    setTracks((prevTracks) => {
+      const updatedTracks = prevTracks.filter(
+        (prevTrack) => prevTrack.id !== track.id
+      );
+      return updatedTracks;
+    });
   };
 
   return (
@@ -31,7 +39,7 @@ function App() {
           <Tracklist searchQuery={searchQuery} addToPlaylist={addToPlaylist} />
         </div>
         <div className="right">
-          <Playlist tracks={tracks} />
+          <Playlist tracks={tracks} removeFromPlaylist={removeFromPlaylist} />
         </div>
       </main>
       <footer>{/* <Track /> */}</footer>
