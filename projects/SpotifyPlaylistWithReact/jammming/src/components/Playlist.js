@@ -10,11 +10,10 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
       <td>{item.trackName}</td>
       <td>{item.artistName}</td>
       <td>{item.albumName}</td>
-      <td>{item.id}</td>
+      <td>{item.uri}</td>
       <td>
         <button
           className="btn btn-outline-success my-2 my-sm-0"
-          //need to make the removeFromPlaylist function
           onClick={() => removeFromPlaylist(item)}
         >
           Remove
@@ -25,7 +24,6 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
 
   return (
     <>
-      {/* <h1>Playlist</h1> */}
       <NamePlaylist />
       <div>
         <table className="table table-striped table-dark playlistTable">
@@ -34,7 +32,7 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
               <th>Song</th>
               <th>Artist</th>
               <th>Album</th>
-              <th>id</th>
+              <th>uri</th>
               <th></th>
             </tr>
           </thead>

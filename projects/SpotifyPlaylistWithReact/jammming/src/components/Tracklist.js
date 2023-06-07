@@ -24,7 +24,8 @@ const Tracklist = ({ searchQuery, addToPlaylist }) => {
     let artistName = JSON.stringify(item.artists[0].name);
     let albumName = JSON.stringify(item.album.name);
     let id = JSON.stringify(item.id);
-    list.push({ trackName, artistName, albumName, id });
+    let uri = JSON.stringify(item.uri);
+    list.push({ trackName, artistName, albumName, id, uri });
     // console.log(list)
   }
   const resultList = list.map((item) => (
@@ -32,7 +33,7 @@ const Tracklist = ({ searchQuery, addToPlaylist }) => {
       <td>{item.trackName}</td>
       <td>{item.artistName}</td>
       <td>{item.albumName}</td>
-      <td>{item.id}</td>
+      <td>{item.uri}</td>
       <td>
         <button
           className="btn btn-outline-success my-2 my-sm-0"
@@ -55,7 +56,7 @@ const Tracklist = ({ searchQuery, addToPlaylist }) => {
               <th>Song</th>
               <th>Artist</th>
               <th>Album</th>
-              <th>id</th>
+              <th>uri</th>
               <th></th>
             </tr>
           </thead>

@@ -4,7 +4,6 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import Playlist from "./components/Playlist";
 import Tracklist from "./components/Tracklist";
-// import Track from "./components/Track";
 import SignInButton from "./util/getToken";
 
 function App() {
@@ -33,12 +32,8 @@ function App() {
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </nav>
       <main className="main">
-
           <Tracklist searchQuery={searchQuery} addToPlaylist={addToPlaylist} />
-
-
           <Playlist tracks={tracks} removeFromPlaylist={removeFromPlaylist} />
-
       </main>
       <footer>{/* <Track /> */}</footer>
     </div>

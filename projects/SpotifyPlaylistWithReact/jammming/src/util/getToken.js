@@ -15,7 +15,7 @@ export const data = {
 };
 
 export default function SignInButton() {
-  const url = `https://accounts.spotify.com/authorize?response_type=token&client_id=${data.clientId}&redirect_uri=${data.redirectUri}`;
+  const url = `https://accounts.spotify.com/authorize?response_type=token&client_id=${data.clientId}&redirect_uri=${data.redirectUri}&scope=playlist-modify-public,playlist-modify-private`;
   const accessToken = findAccessToken();
 
   function handleClick() {
@@ -27,10 +27,7 @@ export default function SignInButton() {
   } else {
     return (
       <div>
-        <a
-          className="nav-link p-2 bd-highlight signin"
-          href={url}
-        >
+        <a className="nav-link p-2 bd-highlight signin" href={url}>
           Sign into Spotify
         </a>
       </div>
@@ -38,8 +35,8 @@ export default function SignInButton() {
   }
 }
 
-      // <div>
-      //   <a className="btn btn-primary" href={url}>
-      //     Sign into Spotify
-      //   </a>
-      // </div>;
+// <div>
+//   <a className="btn btn-primary" href={url}>
+//     Sign into Spotify
+//   </a>
+// </div>;

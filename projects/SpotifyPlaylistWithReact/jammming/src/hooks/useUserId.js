@@ -34,6 +34,7 @@ const useUserId = () => {
         setError(e.message);
       });
   }, [token]);
+
   return { json, fetching, error };
 };
 

@@ -33,5 +33,3 @@ export default function NamePlaylist() {
   );
 }
 
-//https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus TODO: add google icon for edit after input. add event listener for onclick. use "focus" to select the text field of the inpput so user can rename their playlist
-//https://fonts.google.com/icons?selected=Material+Symbols+Outlined:edit:FILL@0;wght@400;GRAD@0;opsz@48&icon.query=edit
