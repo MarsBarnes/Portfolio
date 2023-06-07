@@ -1,13 +1,12 @@
 import React from "react";
 
-export default function NamePlaylist() {
-  const [name, setName] = React.useState("");
-
+export default function NamePlaylist({playlistname, setplaylistname}) {
+  
   const inputRef = React.useRef(null);
 
   function handleChange(event) {
-    setName(event.target.value);
-    console.log(name);
+    setplaylistname(event.target.value);
+    console.log(playlistname);
   }
   function handleClick() {
     console.log("clicked");
@@ -21,7 +20,7 @@ export default function NamePlaylist() {
         type="text"
         placeholder="Name your playlist here!"
         name="name"
-        value={name}
+        value={playlistname}
         className="h1"
         ref={inputRef}
       ></input>

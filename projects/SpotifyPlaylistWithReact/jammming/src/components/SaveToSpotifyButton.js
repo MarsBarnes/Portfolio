@@ -2,8 +2,9 @@ import React from "react";
 import useUserId from "../hooks/useUserId";
 import { findAccessToken } from "../util/getToken";
 
-function SaveToSpotifyButton({ tracks }) {
+function SaveToSpotifyButton({ tracks, playlistname}) {
   const { error, fetching, json } = useUserId();
+  
   // console.log(json, fetching, error);
 
   async function handleClick() {
@@ -21,7 +22,7 @@ function SaveToSpotifyButton({ tracks }) {
         },
         body: JSON.stringify({
           // TODO:Replace IDIDIT with playlist name from NamePlaylist here
-          name: "IDIDIT",
+          name: playlistname,
           description: "New playlist description",
           public: false,
         }),
@@ -64,7 +65,7 @@ function SaveToSpotifyButton({ tracks }) {
       className="saveButton btn btn-outline-success my-2 my-sm-0"
       onClick={handleClick}
     >
-      Save To Spotify
+      Save "{playlistname}" To Spotify
     </button>
   );
 }

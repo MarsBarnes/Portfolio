@@ -5,6 +5,8 @@ import SaveToSpotifyButton from "./SaveToSpotifyButton";
 const Playlist = ({ tracks, removeFromPlaylist }) => {
   console.log({ tracks });
 
+  const [playlistname, setplaylistname] = React.useState("");
+
   const resultList = tracks.map((item) => (
     <tr key={item.id}>
       <td>{item.trackName.replace(/["]+/g, "")}</td>
@@ -24,7 +26,7 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
 
   return (
     <>
-      <NamePlaylist />
+      <NamePlaylist playlistname={playlistname} setplaylistname={setplaylistname} />
       <div>
         <table className="table table-striped table-dark playlistTable">
           <thead>
@@ -38,7 +40,7 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
           </thead>
           <tbody>{resultList}</tbody>
         </table>
-        <SaveToSpotifyButton tracks={tracks}/>
+        <SaveToSpotifyButton tracks={tracks} playlistname={playlistname} />
       </div>
     </>
   );
