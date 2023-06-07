@@ -2,7 +2,7 @@ import React from "react";
 import useUserId from "../hooks/useUserId";
 import { findAccessToken } from "../util/getToken";
 
-function SaveToSpotifyButton() {
+function SaveToSpotifyButton({ tracks }) {
   const { error, fetching, json } = useUserId();
   // console.log(json, fetching, error);
 
@@ -31,16 +31,20 @@ function SaveToSpotifyButton() {
     console.log(res.status);
     const json2 = await res.json();
     console.log(`playlist id: ${json2.id}`);
-    //TODO:make comma seperated list of uris from playlist. then, replace spotify:track:3sl4dcqSwxHVnLfqwF2jly with ${uris}
+    console.log({ tracks });
+
+    const uris = tracks.map((item) => item.uri.replace(/["]+/g, ""));
+    console.log(`uris i am asking for : ${uris}`);
 
     const res2 = await fetch(
-      `https://api.spotify.com/v1/playlists/${json2.id}/tracks?uris=spotify:track:3sl4dcqSwxHVnLfqwF2jly`,
+      `https://api.spotify.com/v1/playlists/${json2.id}/tracks?uris=${uris}`,
       {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/json",
         },
+        // TODO: lookinto how he numbers below work
         body: JSON.stringify({
           range_start: 1,
           insert_before: 3,

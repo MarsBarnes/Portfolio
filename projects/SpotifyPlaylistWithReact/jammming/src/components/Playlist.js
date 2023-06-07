@@ -7,10 +7,10 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
 
   const resultList = tracks.map((item) => (
     <tr key={item.id}>
-      <td>{item.trackName}</td>
-      <td>{item.artistName}</td>
-      <td>{item.albumName}</td>
-      <td>{item.uri}</td>
+      <td>{item.trackName.replace(/["]+/g, "")}</td>
+      <td>{item.artistName.replace(/["]+/g, "")}</td>
+      <td>{item.albumName.replace(/["]+/g, "")}</td>
+      {/* <td>{item.uri}</td> */}
       <td>
         <button
           className="btn btn-outline-success my-2 my-sm-0"
@@ -32,13 +32,13 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
               <th>Song</th>
               <th>Artist</th>
               <th>Album</th>
-              <th>uri</th>
+              {/* <th>uri</th> */}
               <th></th>
             </tr>
           </thead>
           <tbody>{resultList}</tbody>
         </table>
-        <SaveToSpotifyButton />
+        <SaveToSpotifyButton tracks={tracks}/>
       </div>
     </>
   );
