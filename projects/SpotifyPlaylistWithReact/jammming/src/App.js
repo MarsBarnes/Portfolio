@@ -5,7 +5,6 @@ import SearchBar from "./components/SearchBar";
 import Playlist from "./components/Playlist";
 import Tracklist from "./components/Tracklist";
 // import Track from "./components/Track";
-import SaveToSpotifyButton from "./components/SaveToSpotifyButton";
 import SignInButton from "./util/getToken";
 
 function App() {
@@ -31,16 +30,15 @@ function App() {
       <nav className="navbar navbar-dark bg-dark">
         <h3 className="p-2 flex-grow-1 bd-highlight leftaligntext">Jammming</h3>
         <SignInButton />
-        <SaveToSpotifyButton />
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </nav>
       <main className="main">
-        <div className="left">
+
           <Tracklist searchQuery={searchQuery} addToPlaylist={addToPlaylist} />
-        </div>
-        <div className="right">
+
+
           <Playlist tracks={tracks} removeFromPlaylist={removeFromPlaylist} />
-        </div>
+
       </main>
       <footer>{/* <Track /> */}</footer>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import NamePlaylist from "./NamePlaylist";
+import SaveToSpotifyButton from "./SaveToSpotifyButton";
 
 const Playlist = ({ tracks, removeFromPlaylist }) => {
   console.log({ tracks });
@@ -23,22 +24,25 @@ const Playlist = ({ tracks, removeFromPlaylist }) => {
   ));
 
   return (
-    <div>
+    <>
       {/* <h1>Playlist</h1> */}
       <NamePlaylist />
-      <table className="table table-striped table-dark">
-        <thead>
-          <tr>
-            <th>Song</th>
-            <th>Artist</th>
-            <th>Album</th>
-            <th>id</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>{resultList}</tbody>
-      </table>
-    </div>
+      <div>
+        <table className="table table-striped table-dark playlistTable">
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>id</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>{resultList}</tbody>
+        </table>
+        <SaveToSpotifyButton />
+      </div>
+    </>
   );
 };
 

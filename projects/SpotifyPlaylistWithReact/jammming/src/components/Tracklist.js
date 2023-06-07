@@ -45,22 +45,24 @@ const Tracklist = ({ searchQuery, addToPlaylist }) => {
   ));
 
   return (
-    <div>
-      <h1>Tracklist</h1>
+    <>
+      <h1 className="NameTracklist">Tracklist</h1>
       {/* <h1>Tracklist (searching for {searchQuery})</h1> */}
-      <table className="table table-striped table-dark">
-        <thead>
-          <tr>
-            <th>Song</th>
-            <th>Artist</th>
-            <th>Album</th>
-            <th>id</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>{resultList}</tbody>
-      </table>
-    </div>
+      <div>
+        <table className="table table-striped table-dark tracklistTable">
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>id</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>{resultList}</tbody>
+        </table>
+      </div>
+    </>
   );
 };
 

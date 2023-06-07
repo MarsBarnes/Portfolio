@@ -6,12 +6,12 @@ Body {
   color: #0d6efd;
 }
 
-.main {
+/* .main {
   display: flex;
   padding: 10px;
-}
+} */
 
-.left {
+/* .left {
   flex: 50%;
   padding: 10px;
 }
@@ -19,6 +19,34 @@ Body {
 .right {
   flex: 50%;
   padding: 10px;
+} */
+
+main {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px auto;
+  grid-gap: 10px;
+}
+
+.NameTracklist {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.NamePlaylist {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.tracklistTable {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.playlistTable {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .leftaligntext {
@@ -36,3 +64,42 @@ button {
 .signin {
   padding: 8px;
 }
+
+/* .NamePlaylist{
+  color: #0d6efd;
+  background-color: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline:none;
+  box-shadow:none;
+
+} */
+
+.NamePlaylist input[type="text"] {
+  color: #0d6efd;
+  background-color: none;
+  background: transparent;
+  border: none;
+  /* border-bottom: 1px solid #000000; */
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+}
+
+.NamePlaylist input::placeholder {
+  color: #0d6efd;
+  opacity: 50%;
+  background-color: none;
+}
+
+
+
+.saveButton {
+  background-color: #0d6efd;
+  border-color: none;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
