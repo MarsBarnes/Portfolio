@@ -1,93 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <style>
       .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
       }
-      </style>
-    <title>Abigail's Portfolio</title>
-</head>
-<body>
+    </style>
+    <title>Mars's Portfolio</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><h1>Abigail</h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="material-symbols-outlined"> menu</span>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="./index.html">Home</a>
-                  <a class="nav-link" href="./about.html">About</a>
-                  <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
-                  <a class="nav-link " href="./certs.html">Certificates</a>
-                  <a class="nav-link" href="./contact.html">Contact</a>
-                </div>
-              </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><h1>Mars</h1></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-symbols-outlined"> menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="./about.html">About</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+              <a class="nav-link " href="./certs.html">Certificates</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="portfolioMain grid">
-        <!-- portfolio pictures here     portfolio pictures here     portfolio pictures here     portfolio pictures here         portfolio pictures here         portfolio pictures here
+      <!-- portfolio pictures here     portfolio pictures here     portfolio pictures here     portfolio pictures here         portfolio pictures here         portfolio pictures here
         figure caption reference https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption -->
-                <figure class="portfolioItem">
-                    <img class="portfolio" src="./portfolio/art_portfolio.png" alt="screenshot of art portfolio website">
-                    <figcaption class="bold">
-                        <h4><a target="_blank" href="https://abigail125.github.io/Art-Portfolio/">Art Portfolio</a></h4>
-                        <p>This project showcases my art work in a digital portfolio built with HTML/CSS/Javascript.</p> 
-                    </figcaption>
-                </figure>
-                <!-- comment -->
-                <figure class="portfolioItem">
-                    <img class="portfolio" src="./portfolio/ArtPrompt2.png" alt="Art Prompt: Dark Globe in Sculpture">
-                    <!-- <img class="portfolio" src="./portfolio/ArtPrompt1.png" alt="Art Prompt: Happy Shower Curtain in Paper-cutting"> -->
-                    <figcaption class="bold">
-                        <h4><a target="_blank" href="https://github.com/abigail125/Portfolio/blob/2268b1dae0f4ae2768584a0c866f61be89b4e819/projects/Art-Prompt/random_art_prompt_generator.js">Art Prompt Generator</a></h4>
-                        <p>The art prompt generator randomly picks 1 of 50 adjectives, objects, and art mediums to inspire new creations. This program was implemented using javascript and node. </p>
-                    </figcaption>
-                </figure>
-                <figure class="portfolioItem">
-                    <img class="portfolio" src="./portfolio/ClubWebsite.png" alt="Website for a club named, 'Outside the Binary'">
-                    <figcaption class="bold">
-                        <h4><a target="_blank" href="./projects/Club-Website/index.html">Club Website</a></h4>
-                        <p>This is a homepage for a club called, 'Outside the Binary'. It was designed using HTML and CSS.</p>
-                    </figcaption>
-                </figure>
-                <figure class="portfolioItem">
-                    <img class="portfolio" src="./portfolio/StyleGuide.png" alt="Website displaying a style guide with different fonts, colors, and text styles">
-                    <figcaption class="bold">
-                        <h4><a target="_blank" href="./projects/style-guide/index.html">Style Guide Website</a></h4>
-                        <p>This is an example of a website style guide implemenation built with HTML and CSS.</p>
-                    </figcaption>
-                </figure>
-                <figure class="portfolioItem">
-                    <img class="portfolio" src="./portfolio/VR_EscapeRoom.png" alt="Website showing 3 vr escape rooms themed space, lab, and volcano">
-                    <figcaption class="bold">
-                        <h4><a target="_blank" href="./projects/VR-Escape-Room/index.html">VR Escape Room Website</a></h4>
-                        <p>Goosey Games' VR Escape Room website was built using HTML and CSS.</p>
-                    </figcaption>
-                </figure>
-                <figure class="portfolioItem comingSoon">
-                    <figcaption class="bold">More coming soon!</figcaption>
-                </figure>
+      <figure class="portfolioItem">
+        <img
+          class="portfolio"
+          src="./portfolio/art_portfolio.png"
+          alt="screenshot of art portfolio website"
+        />
+        <figcaption class="bold">
+          <h4>
+            <a target="_blank" href="https://Mars125.github.io/Art-Portfolio/"
+              >Art Portfolio</a
+            >
+          </h4>
+          <p>
+            This project showcases my art work in a digital portfolio built with
+            HTML/CSS/Javascript.
+          </p>
+        </figcaption>
+      </figure>
+      <!-- comment -->
+      <figure class="portfolioItem">
+        <img
+          class="portfolio"
+          src="./portfolio/ArtPrompt2.png"
+          alt="Art Prompt: Dark Globe in Sculpture"
+        />
+        <!-- <img class="portfolio" src="./portfolio/ArtPrompt1.png" alt="Art Prompt: Happy Shower Curtain in Paper-cutting"> -->
+        <figcaption class="bold">
+          <h4>
+            <a
+              target="_blank"
+              href="https://github.com/Mars125/Portfolio/blob/2268b1dae0f4ae2768584a0c866f61be89b4e819/projects/Art-Prompt/random_art_prompt_generator.js"
+              >Art Prompt Generator</a
+            >
+          </h4>
+          <p>
+            The art prompt generator randomly picks 1 of 50 adjectives, objects,
+            and art mediums to inspire new creations. This program was
+            implemented using javascript and node.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="portfolioItem">
+        <img
+          class="portfolio"
+          src="./portfolio/ClubWebsite.png"
+          alt="Website for a club named, 'Outside the Binary'"
+        />
+        <figcaption class="bold">
+          <h4>
+            <a target="_blank" href="./projects/Club-Website/index.html"
+              >Club Website</a
+            >
+          </h4>
+          <p>
+            This is a homepage for a club called, 'Outside the Binary'. It was
+            designed using HTML and CSS.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="portfolioItem">
+        <img
+          class="portfolio"
+          src="./portfolio/StyleGuide.png"
+          alt="Website displaying a style guide with different fonts, colors, and text styles"
+        />
+        <figcaption class="bold">
+          <h4>
+            <a target="_blank" href="./projects/style-guide/index.html"
+              >Style Guide Website</a
+            >
+          </h4>
+          <p>
+            This is an example of a website style guide implemenation built with
+            HTML and CSS.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="portfolioItem">
+        <img
+          class="portfolio"
+          src="./portfolio/VR_EscapeRoom.png"
+          alt="Website showing 3 vr escape rooms themed space, lab, and volcano"
+        />
+        <figcaption class="bold">
+          <h4>
+            <a target="_blank" href="./projects/VR-Escape-Room/index.html"
+              >VR Escape Room Website</a
+            >
+          </h4>
+          <p>
+            Goosey Games' VR Escape Room website was built using HTML and CSS.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="portfolioItem comingSoon">
+        <figcaption class="bold">More coming soon!</figcaption>
+      </figure>
     </main>
     <footer class="fgrid">
-        <a class="linkedIn" href="https://github.com/abigail125/Portfolio.git"> <img class="linkPic linkedIn" src="./photos/GitHubLogo.png" alt="Link to LinkedIn"></a>
-        <a class="gitHub" href="https://www.linkedin.com/in/AbigailBarnes1/"> <img class="linkPic gitHub" src="./photos/LinkedInLogo.png" alt="Link to LinkedIn"></a>
+      <a class="linkedIn" href="https://github.com/Mars125/Portfolio.git">
+        <img
+          class="linkPic linkedIn"
+          src="./photos/GitHubLogo.png"
+          alt="Link to LinkedIn"
+      /></a>
+      <a class="gitHub" href="https://www.linkedin.com/in/MarsBarnes1/">
+        <img
+          class="linkPic gitHub"
+          src="./photos/LinkedInLogo.png"
+          alt="Link to LinkedIn"
+      /></a>
     </footer>
-</body>
+  </body>
 </html>
