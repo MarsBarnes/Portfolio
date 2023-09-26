@@ -13,22 +13,22 @@ Welcome to my portfolio website! This platform serves as a showcase of my skills
 ## Projects
 My portfolio currently highlights four projects, each with its own repository:
 
-- Cozzzy Cafe: A pixel art computer game.
-    - website: https://marsbarnes.github.io/Cozzzy-Cafe/
-    - repository: https://github.com/MarsBarnes/Cozzzy-Cafe
-
-- Jammming Bananas: A Spotify playlist creator.
-    - website: https://jammmingbananas.netlify.app/
-    - repository: https://github.com/MarsBarnes/JammmingBananasSpotify
+- Sticker Shop: An e-commerce store.
+    - website: https://bananascommerce.netlify.app/ 
+    - frontend repository: https://github.com/MarsBarnes/commerceApp_frontEnd
+    - backend repository: https://github.com/MarsBarnes/commerceApp_backEnd 
 
 - Reddit Basic: A simplified view of subreddits.
     - website: https://redditbasicbananas.netlify.app/
     - repository: https://github.com/MarsBarnes/RedditClient
 
-- Sticker Shop: An e-commerce store.
-    - website: https://bananascommerce.netlify.app/ 
-    - frontend repository: https://github.com/MarsBarnes/commerceApp_frontEnd
-    - backend repository: https://github.com/MarsBarnes/commerceApp_backEnd 
+- Jammming Bananas: A Spotify playlist creator.
+    - website: https://jammmingbananas.netlify.app/
+    - repository: https://github.com/MarsBarnes/JammmingBananasSpotify
+
+- Cozzzy Cafe: A pixel art computer game.
+    - website: https://marsbarnes.github.io/Cozzzy-Cafe/
+    - repository: https://github.com/MarsBarnes/Cozzzy-Cafe
 
 ## Navigation
 My portfolio website is organized into five main pages:
