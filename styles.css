@@ -9,48 +9,26 @@ h2 {
     background-color: #008891;
 }
 
+/* portfolio page styling below */
 
-.portfolio{
-    max-width: 300px;
-    margin: 0;
-
-}
 .portfolioItem{
     background-color: #0f3057;
-    color: #E7E7DE;
     border-radius: 8px;
-    padding: 8px;
-    height: 450px;
-    width: 450px;
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    margin: auto;
-    grid-template-rows: 2fr 1fr;
-    max-width: 400px;
-
-}
-.comingSoon{
-    display: flex;
-    justify-content: space-around;
-
+    width: 70vw;
+    padding: 1rem;
+    color: #E7E7DE;
+    margin: 10px;
 }
 
-.carousel-item {
-    max-width: 900px;
-    height: auto;
-    max-height: 800px;
-
-
+.portfolioText{
+    /* background-color: #008891; */
+    border-radius: 8px;
+    margin: 20px;
 }
-.carousel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    padding-top: 2rem;
-        max-height: 100%; /* Ensures the images don't exceed the height of the carousel */
-  width: auto; /* Automatically adjust the width based on the aspect ratio */
+
+.portfolioImg{
+    border-radius: 8px;
+    max-width: 65vw;
 }
 
 .bold{
@@ -99,15 +77,10 @@ main{
     max-width: 95vw;
     text-align: center;
     margin-bottom: 65px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.portfolioMain {
-    align-items: center;
-    gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 .navbar-toggler{
@@ -154,7 +127,7 @@ li {
 
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -361,7 +334,7 @@ footer {
   }
 
 
-/* LARGE SCREENS */
+/* LARGE SCREENS
 @media only screen and (min-width: 1400px){
     html {
         font-size: 20px;
@@ -397,4 +370,4 @@ footer {
         max-width: 900px;
 
     }
-  }
+  } */
