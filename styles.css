@@ -9,6 +9,11 @@ h2 {
   background-color: #008891;
 }
 
+.certHeading{
+background-color: #0f3057;
+width: 95vw;
+}
+
 /* portfolio page styling below */
 
 .portfolioItem {
@@ -73,7 +78,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: 95vw;
+  max-width: 70vw;
   text-align: center;
   margin-bottom: 65px;
   margin-top: 20px;
@@ -91,10 +96,10 @@ main {
   background-color: #008891;
   opacity: 1;
   border-radius: 8px;
-  /* padding: 10px !important; */
   margin: 16px 8px 16px 8px;
 }
 
+/* width: 992px is when the nav bar collapses via bootstrap */
 @media (min-width: 992px) {
   .navbar-nav {
     align-items: center;
@@ -156,6 +161,7 @@ li {
 .certs {
   max-width: 400px;
 }
+
 .pdf {
   width: 400px;
   height: 300px;
