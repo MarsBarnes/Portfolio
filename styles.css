@@ -98,11 +98,29 @@ main {
   border-radius: 8px;
   margin: 16px 8px 16px 8px;
 }
+.nav-link:hover{
+  background-color: #0f3057;
+  color: #e7e7de;
+}
+.nav-icon {
+  padding: 8px !important;
+  margin: 8px 0 8px 0;
+  color:#008891
+}
+
+.nav-icon-color:hover{
+  color: #0f3057;
+}
+.nav-icon:hover{
+  color: #0f3057;
+}
+
 
 /* width: 992px is when the nav bar collapses via bootstrap */
 @media (min-width: 992px) {
   .navbar-nav {
     align-items: center;
+    color: white!;
   }
 }
 @media (max-width: 992px) {
@@ -111,10 +129,7 @@ main {
   }
 }
 
-.nav-icon {
-  padding: 8px !important;
-  margin: 8px 0 8px 0;
-}
+
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
