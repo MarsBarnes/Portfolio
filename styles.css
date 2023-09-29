@@ -91,8 +91,19 @@ main {
   background-color: #008891;
   opacity: 1;
   border-radius: 8px;
-  padding: 10px !important;
+  /* padding: 10px !important; */
   margin: 16px 8px 16px 8px;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .nav-link {
+    padding: 10px !important;
+  }
 }
 
 .nav-icon {
