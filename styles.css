@@ -61,10 +61,6 @@ body {
 body {
   background-image: url(./photos/light_honeycomb.png);
 }
-footer {
-  background-color: #d5d5d5;
-  background-image: url(./photos/light_honeycomb.png);
-}
 
 html,
 body {
@@ -78,10 +74,14 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: 70vw;
   text-align: center;
   margin-bottom: 65px;
   margin-top: 20px;
+}
+
+.aboutText {
+  width: 70vw;
+  margin: auto;
 }
 
 .navbar-toggler {
@@ -152,8 +152,6 @@ a {
 ul {
   background-color: #0f3057;
   border-radius: 0.25rem;
-}
-li {
 }
 
 .grid {
