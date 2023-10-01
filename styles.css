@@ -9,9 +9,9 @@ h2 {
   background-color: #008891;
 }
 
-.certHeading{
-background-color: #0f3057;
-width: 95vw;
+.certHeading {
+  background-color: #0f3057;
+  width: 95vw;
 }
 
 /* portfolio page styling below */
@@ -98,23 +98,22 @@ main {
   border-radius: 8px;
   margin: 16px 8px 16px 8px;
 }
-.nav-link:hover{
+.nav-link:hover {
   background-color: #0f3057;
   color: #e7e7de;
 }
 .nav-icon {
   padding: 8px !important;
   margin: 8px 0 8px 0;
-  color:#008891
+  color: #008891;
 }
 
-.nav-icon-color:hover{
+.nav-icon-color:hover {
   color: #0f3057;
 }
-.nav-icon:hover{
+.nav-icon:hover {
   color: #0f3057;
 }
-
 
 /* width: 992px is when the nav bar collapses via bootstrap */
 @media (min-width: 992px) {
@@ -128,7 +127,6 @@ main {
     padding: 10px !important;
   }
 }
-
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
@@ -175,6 +173,27 @@ li {
 }
 .certs {
   max-width: 400px;
+}
+
+/* a figure figcaption {
+color: #0f3057;
+text-decoration: none;
+font-size: 1.25rem;
+}
+a figure figcaption:hover {
+color: #008891;
+} */
+
+.certLink {
+  color: #0f3057;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.certLink:hover {
+  color: #008891;
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 
 .pdf {
@@ -320,13 +339,6 @@ footer {
     grid-column: span 2;
     margin: auto;
   }
-  .carousel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding-top: 2rem;
-  }
 }
 
 /* MEDIUM SCREENS */
@@ -344,16 +356,6 @@ footer {
   .allcol {
     grid-column: span 2;
     margin: auto;
-  }
-  .carousel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    padding-top: 2rem;
-  }
-  #carouselExampleIndicators {
-    max-width: 850px;
   }
 }
 
@@ -377,20 +379,5 @@ footer {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
         justify-items: center;
-    }
-    .carousel {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 65%;
-        padding-top: 2rem;
-    }
-    .carousel-item{
-        margin: auto;
-        
-    }
-    #carouselExampleIndicators {
-        max-width: 900px;
-
     }
   } */
