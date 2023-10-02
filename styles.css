@@ -26,7 +26,6 @@ h2 {
 }
 
 .portfolioText {
-  /* background-color: #008891; */
   border-radius: 8px;
   margin: 20px;
 }
@@ -173,15 +172,6 @@ ul {
   max-width: 400px;
 }
 
-/* a figure figcaption {
-color: #0f3057;
-text-decoration: none;
-font-size: 1.25rem;
-}
-a figure figcaption:hover {
-color: #008891;
-} */
-
 .certLink {
   color: #0f3057;
   text-decoration: none;
@@ -238,9 +228,6 @@ footer {
   padding-top: 15px;
 }
 
-
-
-
 /* EXTRA EXTRA SMALL SCREENS */
 @media only screen and (max-width: 400px) {
   html {
@@ -257,9 +244,6 @@ footer {
   }
   .certs {
     max-width: 300px;
-  }
-  .portfolio {
-    /* max-width: 268px; */
   }
 
   .portfolioItem {
@@ -311,17 +295,14 @@ footer {
   }
   .portfolioMain {
     display: grid;
-    /* grid-template-columns: 1fr; */
   }
   .portfolioItem {
     width: 90vw;
-    
   }
   .portfolio {
     max-width: 300px;
   }
   .portfolioImg {
-    /* border-radius: 8px 8px 0 0; */
     max-width: 100%;
   }
   .certs {
@@ -349,17 +330,8 @@ footer {
   }
   .portfolioMain {
     display: grid;
-    /* grid-template-columns: 1fr; */
   }
-  /* .portfolioItem {
-    max-width: 400px;
-  }
-  .portfolio {
-    max-width: 300px;
-  }
-  .portfolioImg {
-    max-width: 300px;
-  } */
+
   .certs {
     max-width: 300px;
   }
@@ -387,25 +359,4 @@ footer {
   }
 }
 
-/* LARGE SCREENS
-@media only screen and (min-width: 1400px){
-    html {
-        font-size: 20px;
-    }
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .certs{
-        max-width: 400px;
-    }
-    .allcol{
-        grid-column: span 3;
-        margin: auto;
-    }
-    .fgrid{
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
-        justify-items: center;
-    }
-  } */
+
