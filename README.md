@@ -11,7 +11,7 @@ Welcome to my portfolio website! This platform serves as a showcase of my skills
     - Open the index.html file in your web browser.
 
 ## Navigation
-My portfolio website is organized into five main pages:
+My portfolio website is organized into four main pages:
 - About Me: The about page provides a brief summary of my educational background and skills related to software engineering.
 - Portfolio: The portfolio page lists four projects. It includes website screenshots, brief project summaries, and links to their respective websites.
 - Certificates: On the certificates page, you'll find my Codecademy Full Stack Engineering certificate, my Harvard Introduction to Computer Science certificate, and additional certificates.
