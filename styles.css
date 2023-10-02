@@ -247,6 +247,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .aboutText {
+    width: 90vw;
+    margin: auto;
+  }
   .certs {
     max-width: 300px;
   }
@@ -255,17 +260,17 @@ footer {
   }
 
   .portfolioItem {
-  background-color: #0f3057;
-  border-radius: 8px;
-  width: 300px;
-  padding: 0;
-  color: #e7e7de;
-  margin: 0;
-}
-.portfolioImg {
-  border-radius: 8px;
-  max-width: 100%;
-}
+    background-color: #0f3057;
+    border-radius: 8px;
+    width: 300px;
+    padding: 0;
+    color: #e7e7de;
+    margin: 0;
+  }
+  .portfolioImg {
+    border-radius: 8px 8px 0 0;
+    max-width: 100%;
+  }
 
   .allcol {
     grid-column: span 1;
@@ -292,6 +297,7 @@ footer {
   html {
     font-size: 20px;
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -349,7 +355,6 @@ footer {
     grid-column: span 2;
     margin: auto;
   }
-
 }
 
 /* MEDIUM SCREENS */
