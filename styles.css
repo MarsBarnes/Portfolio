@@ -302,6 +302,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .aboutText {
+    width: 90vw;
+    margin: auto;
+  }
   .portfolioMain {
     display: grid;
     /* grid-template-columns: 1fr; */
