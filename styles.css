@@ -30,6 +30,7 @@ h2 {
   margin: 20px;
 }
 
+/* when updating screenshots, to get same size screen shots: pull up one of the full size pictures and size browser to be the exact same size, then use snipping tool's full window snip to avoid cropping */
 .portfolioImg {
   border-radius: 8px;
   max-width: 65vw;
