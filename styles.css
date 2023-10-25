@@ -14,6 +14,10 @@ h2 {
   border-radius: 0.25rem;
   background-color: #66fcf1;
 }
+body {
+    padding-top: 100px; /* Set to the height of your navbar */
+}
+
 
 .certHeading {
   background-color: #1f2833;

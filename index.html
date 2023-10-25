@@ -41,9 +41,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <link href="styles.css" rel="stylesheet" /> <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -65,12 +69,12 @@
     </style>
     <title>Mars Barnes</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"><h1>Mars Barnes</h1></a>
-          
           <button
             class="navbar-toggler"
             type="button"
@@ -84,124 +88,294 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="./index.html">Portfolio</a>
+              <a class="nav-link" href="#jamjam">Portfolio</a>
               <a class="nav-link" href="./about.html">About Me</a>
               <a class="nav-link" href="./certs.html">Certificates</a>
               <a class="nav-link" href="./contact.html">Contact</a>
-              <a class="nav-icon" href="https://www.linkedin.com/in/marsbarnes3/">
-                <i
-                  class="fa-brands fa-linkedin fa-3x nav-icon-color"               
-                ></i></a>
-              <a class="nav-icon" href="https://github.com/MarsBarnes/Portfolio.git">
-                <i
-                  class="fa-brands fa-github fa-3x nav-icon-color"
-                ></i></a>
-              </div>
+              <a
+                class="nav-icon"
+                href="https://www.linkedin.com/in/marsbarnes3/"
+              >
+                <i class="fa-brands fa-linkedin fa-3x nav-icon-color"></i
+              ></a>
+              <a
+                class="nav-icon"
+                href="https://github.com/MarsBarnes/Portfolio.git"
+              >
+                <i class="fa-brands fa-github fa-3x nav-icon-color"></i
+              ></a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main class="portfolioMain">
-      <!-- Sticker -->
-      <div class="portfolioItem">
-        <a class="portfolioImg" target="_blank" href="https://bananascommerce.netlify.app/">
-          <img
+    <main>
+      <div class="portfolioGrid">
+        <img
+          class="portfolioPic"
+          src="./photos/ProfilePic.jpg"
+          alt="Mars stands on railroad tracks. They have short neon green and electric blue hair. They wear a leather jacket and sunglasses."
+        />
+
+        <p class="aboutText">
+          Meet Mars! They are a software engineer, based in Florida. In their
+          spare time, they enjoing making art, playing boardgames with friends,
+          and going on walks.
+        </p>
+        <h2 class="aboutText">Education</h2>
+
+        <ul class="removeBullets aboutText">
+          <li>Codecademy Full Stack Software Engineer Path</li>
+          <li>Harvard's CS50: Introduction to Computer Science Course</li>
+          <li>
+            M.Ed. Educational Psychology and Applied Developmental Science from
+            the University of Virginia
+          </li>
+          <li>B.A. Psychology from the University of South Florida</li>
+          <li>A.A. Liberal Arts from Hillsborough Community College</li>
+        </ul>
+        <h2 class="aboutText">Skills</h2>
+
+        <ul class="removeBullets aboutText">
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Express</li>
+          <li>Node</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Git</li>
+          <li>Github</li>
+        </ul>
+      </div>
+      <div class="portfolioMain">
+        <!-- Sticker -->
+        <div class="portfolioItem">
+          <a
             class="portfolioImg"
-            src="./photos/Z_crop_stickerShop.png"
-            alt="screenshot of art portfolio website"
-          />
-        </a>
-        <div class="portfolioText">
-          <h4 class="">
-            Sticker Shop
-          </h4>
-          <p>
-            Crafted with PostgreSQL, Express, React, and Node.js stack, this
-            e-commerce web app brings you a delightful sticker shopping
-            experience.
-          </p>
-          <div class="codeWebsiteLinksDiv">
-          <a class="codeWebsiteLinks" target="_blank" href="https://github.com/MarsBarnes/commerceApp_frontEnd">Frontend Code</a>
-          <a class="codeWebsiteLinks" target="_blank" href="https://github.com/MarsBarnes/commerceApp_backEnd">Backend Code</a>
-          <a class="codeWebsiteLinks" target="_blank" href="https://bananascommerce.netlify.app/">Website</a>
+            target="_blank"
+            href="https://bananascommerce.netlify.app/"
+          >
+            <img
+              class="portfolioImg"
+              src="./photos/Z_crop_stickerShop.png"
+              alt="screenshot of art portfolio website"
+            />
+          </a>
+          <div class="portfolioText">
+            <h4 class="">
+              Sticker Shop
+            </h4>
+            <p>
+              Crafted with PostgreSQL, Express, React, and Node.js stack, this
+              e-commerce web app brings you a delightful sticker shopping
+              experience.
+            </p>
+            <div class="codeWebsiteLinksDiv">
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://github.com/MarsBarnes/commerceApp_frontEnd"
+                >Frontend Code</a
+              >
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://github.com/MarsBarnes/commerceApp_backEnd"
+                >Backend Code</a
+              >
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://bananascommerce.netlify.app/"
+                >Website</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Sticker -->
-      <!-- Reddit -->
-      <div class="portfolioItem">
-        <a class="portfolioImg" target="_blank" href="https://redditbasicbananas.netlify.app/">
-          <img
+        <!-- Sticker -->
+        <!-- Reddit -->
+        <div class="portfolioItem">
+          <a
             class="portfolioImg"
-            src="./photos/Z_crop_redditBasic.png"
-            alt="screenshot of reddit basic website"
-          />
-        </a>
-        <div class="portfolioText">
-          <h4 class="">
-           Reddit Basic
-          </h4>
-          <p>
-            Reddit Basic, built with React and Redux, offers a streamlined
-            Reddit browsing experience, allowing users to search, filter, and
-            view subreddits.
-          </p>
-          <div class="codeWebsiteLinksDiv">
-          <a class="codeWebsiteLinks" target="_blank" href="https://github.com/MarsBarnes/RedditClient">Code</a>
-          <a class="codeWebsiteLinks" target="_blank" href="https://redditbasicbananas.netlify.app/">Website</a>
+            target="_blank"
+            href="https://redditbasicbananas.netlify.app/"
+          >
+            <img
+              class="portfolioImg"
+              src="./photos/Z_crop_redditBasic.png"
+              alt="screenshot of reddit basic website"
+            />
+          </a>
+          <div class="portfolioText">
+            <h4 class="">
+              Reddit Basic
+            </h4>
+            <p>
+              Reddit Basic, built with React and Redux, offers a streamlined
+              Reddit browsing experience, allowing users to search, filter, and
+              view subreddits.
+            </p>
+            <div class="codeWebsiteLinksDiv">
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://github.com/MarsBarnes/RedditClient"
+                >Code</a
+              >
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://redditbasicbananas.netlify.app/"
+                >Website</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Reddit -->
-      <!-- Spotify -->
-      <div class="portfolioItem">
-        <a class="portfolioImg" target="_blank" href="https://jammmingbananas.netlify.app/">
-          <img
+        <!-- Reddit -->
+        <!-- Spotify -->
+        <div class="portfolioItem">
+          <div id="jamjam" style="position: relative; margin-top: -150px"></div>
+          <a
             class="portfolioImg"
-            src="./photos/Z_crop_jammmingBananas.png"
-            alt="screenshot of spotify playlist creator website"
-          />
-        </a>
-        <div class="portfolioText">
-          <h4 class="">
-           Jammming Bananas
-          </h4>
-          <p>
-            Jammming Bananas, a React-based Spotify playlist creator, lets you
-            search, add songs, and upload playlists to your Spotify account
-            using the Spotify API.
-          </p>
-          <div class="codeWebsiteLinksDiv">
-          <a class="codeWebsiteLinks" target="_blank" href="https://github.com/MarsBarnes/JammmingBananasSpotify">Code</a>
-          <a class="codeWebsiteLinks" target="_blank" href="https://jammmingbananas.netlify.app/">Website</a>
+            target="_blank"
+            href="https://jammmingbananas.netlify.app/"
+          >
+            <img
+              class="portfolioImg"
+              src="./photos/Z_crop_jammmingBananas.png"
+              alt="screenshot of spotify playlist creator website"
+            />
+          </a>
+          <div class="portfolioText">
+            <h4 class="">
+              Jammming Bananas
+            </h4>
+            <p>
+              Jammming Bananas, a React-based Spotify playlist creator, lets you
+              search, add songs, and upload playlists to your Spotify account
+              using the Spotify API.
+            </p>
+            <div class="codeWebsiteLinksDiv">
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://github.com/MarsBarnes/JammmingBananasSpotify"
+                >Code</a
+              >
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://jammmingbananas.netlify.app/"
+                >Website</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Spotify -->
-      <!-- Cozzzy Cafe -->
-      <div class="portfolioItem">
-        <a class="portfolioImg" target="_blank" href="https://marsbarnes.github.io/Cozzzy-Cafe/">
-          <img
+        <!-- Spotify -->
+        <!-- Cozzzy Cafe -->
+        <div class="portfolioItem">
+          <a
             class="portfolioImg"
-            src="./photos/Z_crop_cozzzyCafe.png"
-            alt="screenshot of art portfolio website"
-          />
-        </a>
-        <div class="portfolioText">
-          <h4 class="">
-            Cozzzy Cafe
-          </h4>
-          <p>
-            Built with JavaScript, this barista-themed game offers a charming pixelated cafe experience with user-friendly keyboard controls, providing nostalgic entertainment.
-          </p>
-          <div class="codeWebsiteLinksDiv">
-          <a class="codeWebsiteLinks" target="_blank" href="https://github.com/MarsBarnes/Cozzzy-Cafe">Code</a>
-          <a class="codeWebsiteLinks" target="_blank" href="https://marsbarnes.github.io/Cozzzy-Cafe/">Website</a>
+            target="_blank"
+            href="https://marsbarnes.github.io/Cozzzy-Cafe/"
+          >
+            <img
+              class="portfolioImg"
+              src="./photos/Z_crop_cozzzyCafe.png"
+              alt="screenshot of art portfolio website"
+            />
+          </a>
+          <div class="portfolioText">
+            <h4 class="">
+              Cozzzy Cafe
+            </h4>
+            <p>
+              Built with JavaScript, this barista-themed game offers a charming
+              pixelated cafe experience with user-friendly keyboard controls,
+              providing nostalgic entertainment.
+            </p>
+            <div class="codeWebsiteLinksDiv">
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://github.com/MarsBarnes/Cozzzy-Cafe"
+                >Code</a
+              >
+              <a
+                class="codeWebsiteLinks"
+                target="_blank"
+                href="https://marsbarnes.github.io/Cozzzy-Cafe/"
+                >Website</a
+              >
+            </div>
           </div>
         </div>
+        <!-- Cozzzy Cafe -->
       </div>
-      <!-- Cozzzy Cafe -->
+      <div class="grid">
+        <!-- <h2 class="allcol certHeading">Coding Certificates</h2> -->
+        <a
+          href="https://www.codecademy.com/profiles/MarsBarnes3/certificates/ffd0f42cce1a44e9a0108b365047a0a6"
+          target="_blank"
+          class="certLink"
+        >
+          <figure>
+            <img
+              class="certs"
+              src="./certs/CodeCademy_FullStackEngineer_Certificate.png"
+              alt="Full-Stack Engineer Certificate"
+            />
+            <figcaption class="certLink">Full-Stack Engineer</figcaption>
+          </figure>
+        </a>
+        <a
+          href="https://courses.edx.org/certificates/319c4e64eec342178f0342d58263a3e1"
+          target="_blank"
+          class="certLink"
+        >
+          <figure>
+            <img
+              class="certs"
+              src="./certs/cs50_cert.png"
+              alt="Introduction to Computer Science Certificate"
+            />
+            <figcaption class="certLink">
+              Introduction to Computer Science
+            </figcaption>
+          </figure>
+        </a>
+        <a
+          href="https://www.codecademy.com/profiles/MarsBarnes3/certificates/6c152bd262967f8c941c9707ed636bda"
+          target="_blank"
+          class="certLink"
+        >
+          <figure>
+            <img
+              class="certs"
+              src="./certs/CertificateOfCompletion_LearnPython3Course.jpg"
+              alt="Learn Python 3 Course Certificate"
+            />
+            <figcaption class="certLink">Learn Python 3 Course</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="grid">
+        <div class="allcol formBox">
+          <iframe
+            class=""
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe3Wk05x3OTAyMAoqomecwHjQorunblyBwZI_SCQC8lATr6sA/viewform?embedded=true"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+      </div>
     </main>
     <script
       src="https://kit.fontawesome.com/5de3dbc263.js"
