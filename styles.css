@@ -4,12 +4,15 @@ h1 {
   /* color: #cb2d9c; */
   font-weight: 600;
 }
+.navbar-brand:hover {
+  color: #66fcf1;
+}
 
 h2 {
-  color: #c5c6c7;
+  color: #0b0c10;
   padding: 7px;
   border-radius: 0.25rem;
-  background-color: #45a29e;
+  background-color: #66fcf1;
 }
 
 .certHeading {
@@ -32,7 +35,7 @@ h2 {
 }
 
 .portfolioItem:nth-child(even) {
- flex-direction: row; 
+  flex-direction: row;
 }
 
 .portfolioText {
@@ -82,7 +85,7 @@ body {
 }
 body {
   /* background-image: url(./photos/light_honeycomb.png); */
-  background-color: #0B0C10;
+  background-color: #0b0c10;
   /* background: rgb(0,136,145);
 background: linear-gradient(0deg, rgba(0,136,145,1) 53%, rgba(15,48,87,1) 100%); */
 }
@@ -109,6 +112,7 @@ main {
 .aboutText {
   width: 70vw;
   margin: auto;
+  /* text-align: left; */
 }
 .codeWebsiteLinksDiv {
   display: flex;
@@ -123,8 +127,8 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1 1 0;
-  color: #0B0C10;
-  background-color: #66FCF1;
+  color: #0b0c10;
+  background-color: #66fcf1;
   opacity: 1;
   border-radius: 8px;
   margin: 8px 8px 8px 8px;
@@ -135,7 +139,7 @@ main {
 }
 .codeWebsiteLinks:hover {
   background-color: #45a29e;
-  color: #c5c6c7;
+  color: white;
 }
 
 .portfolioText > h4 {
@@ -143,15 +147,15 @@ main {
 }
 
 .navbar-toggler {
-  color: #66FCF1;
+  color: #66fcf1;
   align-items: baseline;
 }
 .navbar-toggler-icon {
-  color: #66FCF1;
+  color: #66fcf1;
 }
 .nav-link {
-  color: #0B0C10;
-  background-color: #66FCF1;
+  color: #0b0c10;
+  background-color: #66fcf1;
   opacity: 1;
   border-radius: 8px;
   margin: 16px 8px 16px 8px;
@@ -164,7 +168,7 @@ main {
 .nav-icon {
   padding: 8px !important;
   margin: 8px 0 8px 0;
-  color: #66FCF1;
+  color: #66fcf1;
 }
 
 .nav-icon-color:hover {
@@ -201,7 +205,7 @@ a {
 .portfolioPic {
   box-shadow: 80px 80px 80px 80px #c5c6c7 inset;
   max-width: 300px;
-  border-radius: 8px;
+  border-radius: 50%;
   border-color: #1f2833;
   border-width: 10px;
   border-style: solid;
@@ -216,6 +220,7 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
 }
 
 .removeBullets {
@@ -233,15 +238,15 @@ ul {
 }
 
 .certLink {
+  padding-top: 10px;
   color: #c5c6c7;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
 .certLink:hover {
-  color: #45a29e;
+  color: #66fcf1;
   text-decoration: none;
-  font-size: 1.25rem;
 }
 
 .pdf {
@@ -254,7 +259,7 @@ ul {
 }
 
 .linkPic {
-  background-color: #1F2833;
+  background-color: #1f2833;
 }
 .linkedIn {
   grid-column-start: 2;
@@ -425,8 +430,11 @@ iframe {
     flex-direction: column;
   }
   .portfolioItem:nth-child(even) {
- flex-direction: column; 
-}
+    flex-direction: column;
+  }
+  .portfolioImg{
+    margin: 0;
+  }
   .codeWebsiteLinksDiv {
     display: flex;
     flex-direction: row;
