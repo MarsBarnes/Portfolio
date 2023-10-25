@@ -61,7 +61,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
     <style>
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -88,10 +87,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#jamjam">Portfolio</a>
-              <a class="nav-link" href="./about.html">About Me</a>
-              <a class="nav-link" href="./certs.html">Certificates</a>
-              <a class="nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link" href="#top">About Me</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#certs">Certificates</a>
+              <a class="nav-link" href="#contact">Contact</a>
               <a
                 class="nav-icon"
                 href="https://www.linkedin.com/in/marsbarnes3/"
@@ -110,7 +109,8 @@
       </nav>
     </header>
     <main>
-      <div class="portfolioGrid">
+      <section class="portfolioGrid">
+        <!-- <div id="about" class="sectionDivider"></div> -->
         <img
           class="portfolioPic"
           src="./photos/ProfilePic.jpg"
@@ -149,8 +149,9 @@
           <li>Git</li>
           <li>Github</li>
         </ul>
-      </div>
-      <div class="portfolioMain">
+      </section>
+      <section class="portfolioMain">
+        <div id="portfolio" class="sectionDivider"></div>
         <!-- Sticker -->
         <div class="portfolioItem">
           <a
@@ -237,7 +238,7 @@
         <!-- Reddit -->
         <!-- Spotify -->
         <div class="portfolioItem">
-          <div id="jamjam" style="position: relative; margin-top: -150px"></div>
+          <!-- <div id="jamjam" class="sectionDivider"></div> -->
           <a
             class="portfolioImg"
             target="_blank"
@@ -314,8 +315,10 @@
           </div>
         </div>
         <!-- Cozzzy Cafe -->
-      </div>
-      <div class="grid">
+      </section>
+      <div id="certs" class="sectionDivider"></div>
+      <section class="certFlex">
+        
         <!-- <h2 class="allcol certHeading">Coding Certificates</h2> -->
         <a
           href="https://www.codecademy.com/profiles/MarsBarnes3/certificates/ffd0f42cce1a44e9a0108b365047a0a6"
@@ -361,21 +364,13 @@
             <figcaption class="certLink">Learn Python 3 Course</figcaption>
           </figure>
         </a>
-      </div>
-      <div class="grid">
-        <div class="allcol formBox">
-          <iframe
-            class=""
-            src="https://docs.google.com/forms/d/e/1FAIpQLSe3Wk05x3OTAyMAoqomecwHjQorunblyBwZI_SCQC8lATr6sA/viewform?embedded=true"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
-          >
+      </section>
+      <section >
+        <div id="contact" class="sectionDivider"></div>
+        <div class="contactFlex">
+          <iframe class="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSfuVhc1F6Cbl_v-7NcijdJlNJsG8_E-0clWEXNgiRsO2stfjQ/viewform?embedded=true" width="850" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
-      </div>
+      </section>
     </main>
     <script
       src="https://kit.fontawesome.com/5de3dbc263.js"
