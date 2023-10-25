@@ -145,6 +145,13 @@ main {
 .portfolioText > h4 {
   font-size: 4rem;
 }
+.navbar {
+  position: fixed;
+  background-color: #0b0c10;
+  top: 0;
+    left: 0;
+    width: 100%;
+}
 
 .navbar-toggler {
   color: #66fcf1;
