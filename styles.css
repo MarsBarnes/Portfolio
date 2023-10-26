@@ -145,7 +145,7 @@ section:last-child {
   padding-bottom: 0;
 }
 section:first-child {
-  padding-top: 25px;
+  /* padding-top: 25px; */
   background: rgb(102, 252, 241);
   background: linear-gradient(
     133deg,
@@ -186,6 +186,45 @@ section:first-child {
   font-size: 6rem;
   font-weight: 600;
 }
+
+/* ********************************************************************* Home ****************************************************************************** */
+.superBigText {
+  font-size: 8rem;
+  margin-bottom: 0;
+  line-height: 7 rem;
+}
+.bigText {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10vw;
+  flex: 1 1 0;
+  color: #c5c6c7;
+}
+.homeText {
+  grid-column: 2 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: auto;
+}
+.profilePic {
+  box-shadow: 80px 80px 80px 80px #c5c6c7 inset;
+  max-width: 400px;
+  border-radius: 50%;
+  /* border-color: #1f2833; */
+  /* border-width: 10px;
+  border-style: solid; */
+  margin: 0 20px;
+}
+
 /* ********************************************************************* ABOUT ****************************************************************************** */
 .aboutText {
   width: 70vw;
@@ -197,15 +236,6 @@ section:first-child {
   list-style: none;
   padding: 0;
   color: #c5c6c7;
-}
-.profilePic {
-  box-shadow: 80px 80px 80px 80px #c5c6c7 inset;
-  max-width: 300px;
-  border-radius: 50%;
-  /* border-color: #1f2833; */
-  /* border-width: 10px;
-  border-style: solid; */
-  margin: auto;
 }
 
 .aboutFlex {
@@ -219,7 +249,7 @@ svg {
 
 .skillsGrid {
   background-color: #989898;
-  color:#0b0c10;
+  color: #0b0c10;
   padding: 10px 0;
   display: grid;
   grid-template-columns: 1 1 1;
