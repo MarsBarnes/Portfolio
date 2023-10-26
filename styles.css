@@ -1,4 +1,7 @@
 /* ********************************************************************* GLOBAL ****************************************************************************** */
+:root {
+  color-scheme: dark;
+}
 h1 {
   /* color:#44ff00; */
   /* font-size: 3rem; */
@@ -8,9 +11,7 @@ h1 {
 
 h2 {
   color: #0b0c10;
-  padding: 7px;
-  border-radius: 0.25rem;
-  background-color: #66fcf1;
+  font-weight: 600;
 }
 
 p {
@@ -57,10 +58,10 @@ a {
   color: #c5c6c7;
 }
 
-ul {
+/* ul {
   background-color: #1f2833;
   border-radius: 0.25rem;
-}
+} */
 
 .grid {
   display: grid;
@@ -136,6 +137,8 @@ section {
   width: 100%;
   padding-bottom: 100px;
   padding-top: 100px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 section:nth-child(even) {
   background-color: #989898;
@@ -191,12 +194,12 @@ section:first-child {
 .superBigText {
   font-size: 8rem;
   margin-bottom: 0;
-  line-height: 7 rem;
 }
 .bigText {
   font-size: 3.5rem;
   margin-bottom: 0;
-  
+  padding-bottom: 1rem;
+  letter-spacing: 0.1 rem;
 }
 
 .homeGrid {
@@ -205,6 +208,7 @@ section:first-child {
   padding: 10vw;
   flex: 1 1 0;
   color: #c5c6c7;
+  padding-bottom: 30vh;
 }
 .homeText {
   grid-column: 2 / 4;
@@ -227,9 +231,8 @@ section:first-child {
 
 /* ********************************************************************* ABOUT ****************************************************************************** */
 .aboutText {
-  width: 70vw;
   margin: auto;
-  /* text-align: left; */
+  text-align: left;
 }
 .removeBullets {
   list-style-type: none;
@@ -238,24 +241,31 @@ section:first-child {
   color: #c5c6c7;
 }
 
-.aboutFlex {
-  display: flex;
-  flex-direction: column;
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10vw;
+  grid-gap: 7vw;
 }
 
 svg {
   max-height: 20px;
 }
+.rightAbout {
+  grid-column: 2 / 3;
+}
+.left {
+  grid-column: 1 / 2;
+}
 
 .skillsGrid {
-  background-color: #989898;
+  /* background-color: #989898; */
   color: #0b0c10;
   padding: 10px 0;
   display: grid;
-  grid-template-columns: 1 1 1;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
 }
 
 /* ********************************************************************* PORTFOLIO ****************************************************************************** */
@@ -267,17 +277,17 @@ svg {
   /* background-color: #1F2833; */
   border-radius: 8px;
   /* width: 100%; */
-  padding: 1rem;
+  padding: 1rem 0;
   color: #c5c6c7;
-  margin: 0 10vw 0 10vw;
+  justify-content: space-between;
 }
-/* .portfolioItem:first-child {
+.portfolioItem:first-child {
   padding-top: 0;
 }
 
 .portfolioItem:last-child {
   padding-bottom: 0;
-} */
+}
 
 .portfolioItem:nth-child(even) {
   flex-direction: row;
@@ -301,7 +311,7 @@ svg {
 .portfolioImg {
   border-radius: 8px;
   max-width: 100%;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   /* max-width: 65vw; */
 }
 
@@ -355,30 +365,28 @@ svg {
   text-decoration: none;
 }
 
-.certHeading {
-  background-color: #1f2833;
-  width: 95vw;
-}
-
 .certFlex {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  margin: auto;
+  justify-content: space-between;
+  /* margin-left: 10vw;
+  margin-right: 10vw; */
 }
 /* ********************************************************************* CONTACT ****************************************************************************** */
 
 .googleForm {
   min-height: 100%;
   min-width: 100%;
+  color-scheme: light;
 }
 .contactFlex {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 95vw;
+  width: 80vw;
   height: 900px;
+  background-color: transparent;
+
   /* background-color: red !important; */
 }
 
