@@ -139,12 +139,15 @@
               🎓, psychology 🧠, and research 🧪. Their tech journey began with
               editing databases and tinkering with HTML embed code. Their
               curiosity quickly piqued, leading them to complete Codecademy’s
-              <a href="#certs" class="aboutLinks">Full Stack Engineering Course</a>
+              <a href="#certs" class="aboutLinks"
+                >Full Stack Engineering Course</a
+              >
               and Harvard’s
-              <a href="#certs" class="aboutLinks">CS50 Introduction to Computer Science</a>. They
-              are passionate about coding because it allows them to explore
-              their curiosity, unleash creativity, and offers a constant stream
-              of new things to learn.
+              <a href="#certs" class="aboutLinks"
+                >CS50 Introduction to Computer Science</a
+              >. They are passionate about coding because it allows them to
+              explore their curiosity, unleash creativity, and offers a constant
+              stream of new things to learn.
             </p>
             <p class="aboutText">
               Beyond the realm of code, Mars enjoys making art 🎨, playing video
@@ -709,20 +712,56 @@
         </div>
       </section>
       <!-- /* ********************************************************************* Contact ****************************************************************************** */ -->
-
       <section id="contact">
-        <div class="contactFlex">
-          <iframe
-            class="googleForm"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfuVhc1F6Cbl_v-7NcijdJlNJsG8_E-0clWEXNgiRsO2stfjQ/viewform?embedded=true"
-            width="850"
-            height="800"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
-          >
-        </div>
+        <h1 class="contactHeader">Contact</h1>
+        <form
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contactFlex"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="57415dfa-5187-42d8-a666-bc36a0ab9f41"
+          />
+          <div class="inputBox inputBox1 form-floating mb-3">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contactField form-control"
+              placeholder="Name"
+              required
+            />
+            <label for="name">Name</label>
+          </div>
+          <div class="inputBox inputBox2 form-floating mb-3">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contactField form-control"
+              placeholder="Email"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="inputBox inputBox3 form-floating mb-3">
+            <textarea
+              id="message"
+              name="message"
+              class="contactField form-control messageField"
+              placeholder="Message"
+              required
+            ></textarea>
+            <label for="message">Message</label>
+          </div>
+          <input type="hidden" name="redirect" value="./" />
+          <button type="submit" class="submitButton nav-link">
+            Send Message
+          </button>
+        </form>
       </section>
     </main>
     <script
@@ -761,6 +800,32 @@
       // Grab all nav-links
       document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", collapseNav);
+      });
+
+      // Contact form: submit data
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const formData = Object.fromEntries(new FormData(form));
+        const body = JSON.stringify(formData);
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body,
+          });
+          if (res.ok) {
+            form.reset();
+            alert("message delivered!");
+          } else {
+            alert(await res.text());
+          }
+        } catch (e) {
+          alert(e.message);
+        }
       });
     </script>
   </body>
